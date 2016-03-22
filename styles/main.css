@@ -37,3 +37,8 @@ button#submitBtn{
 	color: white;
 	padding-bottom: 1em;
 }
+.finalDisplay{
+	background-color: white;
+	font-size: 20pt;
+	margin-top: 10em;
+}

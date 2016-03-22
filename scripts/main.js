@@ -7,7 +7,7 @@ var form = $("form");
 
 form.on("submit", function(e){     
 	e.preventDefault();     
-	console.log("suckit JQuery");     
+	     
 
 	    if (iName.val() === ""){
 			$( "#nameError" )
@@ -22,9 +22,14 @@ form.on("submit", function(e){
 			 $( "#messageError" )
   			.html( "<p>Message cannot be left empty</p>" );
       	 } else {
-			alert("Thanks for contacting us " +iName.val()+ ".  We have received your message and will be in touch shortly.");         
+			$(".inputBox").css("display", "none");
+			$(".finalDisplay").css("display", "block");
+			$(".finalDisplay").html
+			("<div>Thanks for contacting us " +iName.val()+ ".  We have received your message and will be in touch shortly.</div>");         
 		 }
 });
-$("submitBtn").mouseover(function(){
-	$("submitBtn").css({"backgroundColor, #88C470"});
-	});
+
+$("#submitBtn").mouseover(function(){
+	$("#submitBtn").css("background", "#88C470");
+});
+
