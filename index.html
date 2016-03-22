@@ -2,9 +2,31 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
-<body>
+<body >
+	<form class = "inputForm">
+		<div class = "inputBox">
+			<h2 class = "label">Contact Us</h2>
+			<label>First name: </label>
+			<br/>
+			<input type="text" id ="name" ></input>
+			<p id = "nameError"></p>
+			<label>Email Address: </label>
+			<br/>
+			<input type="text" id ="email"></input>
+			<p id = "emailError"></p>
+			<label>Website:</label>
+			<br/>
+			<input type="text" id ="website"></input>
+			<p id = "webError"></p>
+			<label>Happy Message: </label>
+			<br/>
+			<input type="text" id="message"></input>
+			<p id = "messageError"></p>
+			<button type="submit" id = "submitBtn" value="Submit">Submit</button>
+		</div>
+	</form>
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/main.js"></script>
 </body>
